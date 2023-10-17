@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #1dd15d;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  margin-top: 0;
+}
+
+nav .logo a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+nav .logo img {
+  width: 50px; /* Ajuste o tamanho da imagem conforme necessário */
+  height: 50px; /* Ajuste o tamanho da imagem conforme necessário */
+  margin-right: 10px; /* Adicionei um espaçamento à direita da imagem */
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  padding: 10px;
+}
+
+nav li {
+  margin-left: 7px;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+nav li a:hover {
+  background-color: white;
+  color: black;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Isso define a altura para ocupar toda a altura da viewport */
+}
+
+img {
+  max-width: 100%; /* A imagem se ajustará automaticamente à largura da div */
+}
+
+body {
+  font-family: sans-serif;
+  padding: 0;
+  animation: background-color-change 12s linear infinite;
+  background-color: #000000;
+  background-image: url('img3.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; /* Centraliza a imagem de fundo */
+}
+
+h1 {
+  text-align: center;
+}
+
+audio {
+  width: 100%;
+}
+
+input {
+  width: 50%;
+  margin: 10px auto;
+}
+
+button {
+  background-color: #30a969;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px; /* Espaçamento superior para o botão */
+}
+
+.hidden {
+  display: none;
+}
+
+.start-button {
+  background-color: #30a969;
+  color: white;
+  border: none;
+  padding: 20px 35px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 25px;
+  margin-top: 20px;
+}
+
+.start-button:hover {
+  background-color: #29b95b;
+}
+
+.center-text {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#Ib1-resposta {
+  font-size: 24px;
+}

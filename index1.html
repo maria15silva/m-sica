@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qual é a música?</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div id="content-container">
+        <div id="inner-container">
+            <img src="img2.png" width="600" height="250">
+            <div id="game-container"></div>
+            <button id="play-music" class="hidden">Play</button>
+            
+            <div class="center-text"></div>
+            <label id="lbl-resposta" for="resposta" class="hidden"></label>
+            <input type="text" id="resposta" class="hidden"></input>
+            <button id="btn-resposta" class="hidden">Enviar</button>
+            
+            <!-- Div para exibir mensagens -->
+            <div id="mensagem-container" class="hidden">
+                <p id="mensagem"></p>
+                <p id="score">Pontuação: 0</p>
+            </div>
+    
+        </div>
+    </div>
+</body>
+<script src="https://sdk.scdn.co/spotify-player.js"></script>
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: sans-serif;
+    animation: background-color-change 12s linear infinite;
+    background-color: #386641;
+    display: flex; /* Ativando o modelo de layout flex para alinhamento */
+    justify-content: center; /* Alinhando o conteúdo à direita */
+    align-items: center; /* Centralizando verticalmente */
+    height: 100vh; /* Usando a altura da viewport para centralizar verticalmente */
+}
+
+#inner-container {
+    /* Adicione estilos específicos para a nova div interna */
+    text-align: center; /* Centralize o conteúdo horizontalmente */
+    padding: 20px; /* Espaçamento interno para o conteúdo interno */
+    background-color:#f3f3f3;
+    margin-top: 20px;
+    border-radius: 20px;
+}
+
+  /* Estilizando o botão "Enviar" */
+#btn-resposta {
+    background-color: #40916c; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto no botão */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border: none; /* Removendo a borda */
+    border-radius: 5px; /* Borda arredondada */
+    cursor: pointer; /* Alterando o cursor ao passar o mouse */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
+}
+
+#btn-resposta:hover {
+    background-color: #1b4332; /* Cor de fundo quando o mouse estiver sobre o botão */
+}
+
+/* Estilizando o botão "Play" */
+#play-music {
+    margin-bottom: 50px;
+    background-color: #40916c; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto no botão */
+    padding: 15px 30px; /* Espaçamento interno do botão */
+    border: none; /* Removendo a borda */
+    border-radius: 10px; /* Borda arredondada */
+    cursor: pointer; /* Alterando o cursor ao passar o mouse */
+    font-size: 20px; /* Tamanho da fonte */
+    transition: background-color 0.3s ease; /* Transição suave de cor de fundo */
+}
+
+#play-music:hover {
+    background-color: #1b4332; /* Cor de fundo quando o mouse estiver sobre o botão */
+}
+
+/* Estilizando a caixa de entrada de texto */
+#resposta {
+    margin-bottom: 15px;
+    padding: 10px; /* Espaçamento interno da caixa de entrada */
+    border: 1px solid #ccc; /* Borda com cor cinza */
+    border-radius: 5px; /* Borda arredondada */
+    font-size: 16px; /* Tamanho da fonte */
+    width: 75%; /* Largura da caixa de entrada */
+    transition: border-color 0.3s ease; /* Transição suave da cor da borda */
+}
+
+#resposta:focus {
+    border-color: #007BFF; /* Cor da borda quando a caixa de entrada está em foco */
+}
+
+@keyframes background-color-change {
+    0% {
+        background-color: #52b788;
+    }
+    25% {
+        background-color: #40916c; /* Cor 2 */
+    }
+    50% {
+        background-color: #2d6a4f; /* Cor 3 */
+    }
+    100% {
+        background-color: #1b4332; /* Cor 4 */
+    }
+}
+
+body {
+    background-image: url('img5.png');
+    background-size: cover; /* Para cobrir toda a área do body */
+    background-repeat: no-repeat; /* Para não repetir a imagem */
+    background-attachment: fixed; /* Para fixar a imagem no lugar */
+}
+
+@keyframes change-color {
+    0% {
+        background-color: #40916c; /* Cor inicial */
+    }
+    50% {
+        background-color: #2d6a4f; /* Cor intermediária */
+    }
+    100% {
+        background-color: #1b4332; /* Cor final */
+    }
+}
+
+#mensagem-container {
+    width: 100%;
+    background-color: #40916c;
+    text-align: center; /* Centralize o texto horizontalmente */
+    padding: 5px; /* Adicione espaçamento interno */
+    border-radius: 5px;
+    margin-top: 10px; /* Espaço superior para separar das entradas de texto e botão */
+    color: #ffffff;
+    animation: change-color 3s linear infinite; /* 3 segundos de duração */
+}
+
+/* Estilize a mensagem de pontuação */
+#score {
+    margin-top: 10px; /* Espaço superior para separar da div de mensagens */
+}
